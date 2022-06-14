@@ -11,37 +11,30 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+    </style>
 
     <title>Frontend Mentor | Order summary card</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <div class="content">
-      <img src="images/illustration-hero.svg" />
-      
-      <h3>Order Summary</h3>
-      <p>
-        You can now listen to millions of songs, audiobooks, and podcasts on any
-        device anywhere you like!
-      </p>
-      <div class="contaier">
-        <img class="item-1"src="images/icon-music.svg" />
-        <div class="item-2">Annual Plan $59.99/year</div>
-        <div class="item-3"><a href="#">Change</a></div>
+      <img class="content-image" src="images/illustration-hero.svg" />
+      <div class="wrapper">
+        <h3>Order Summary</h3>
+        <p>
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+        <div class="container">
+          <img class="item-1" src="images/icon-music.svg" />
+          <div class="item-2">Annual Plan<br />$59.99/year</div>
+          <div class="item-3"><a href="#">Change</a></div>
+        </div>
+        <div>Proceed to Payment</div>
+        <div>Cancel Order</div>
       </div>
-      <div>Proceed to Payment</div>
-      <div>Cancel Order</div>
-  </div>
+    </div>
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"

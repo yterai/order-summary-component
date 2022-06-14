@@ -1,23 +1,62 @@
 body {
-    background: url(../images/pattern-background-desktop.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50vh;
-    background-color: #F5F7FF;
+  background: url(../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  background-color: #f5f7ff;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .content {
-    margin:0px auto;
-    text-align: center;
-    background-color: #fff;
-    width: 450px;
-    height: 750px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  margin: 0px auto;
+  text-align: center;
+  background-color: #fff;
+  width: 450px;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
 }
 
-.main-content {
-    background-color: red;
+.content-image {
+  border-radius: 20px 20px 0 0;
+}
+
+.container {
+  display: flex;
+}
+
+.item-2 {
+  flex-grow: 2;
+}
+
+.attribution {
+  font-size: 11px;
+  position: fixed;
+  bottom: 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    background: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    background-color: #f5f7ff;
+  }
+
+  .content-image {
+    width: 330px;
+  }
+
+  .content {
+    width: 330px;
+    height: 500px;
+  }
 }
